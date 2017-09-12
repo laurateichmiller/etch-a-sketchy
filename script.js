@@ -70,9 +70,6 @@ $(document).ready(function() {
                     });
                 }
 
-                //Double check for browser weirdness like Safari not wanting to 
-                //set it all the way to 0, and adjust for erasing too far past 
-                //0, since it erases faster than the pencil draws
                 var newOpacity = $(this).css('opacity')
                 if (opacity - newOpacity < .015 || newOpacity < 0) {
                     $(this).css({
