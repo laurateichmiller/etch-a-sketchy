@@ -1,0 +1,80 @@
+* {
+    margin:1;
+    padding:1;
+    font-family: Chalkduster, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #bcd4e6;
+}
+
+#container {
+    width: 600px;
+    margin: auto;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+h1 {
+    line-height: 0;
+}
+
+#reset {
+    background-color: #C0C0C0;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    opacity: .6;
+    transition: .1s;
+}
+
+#reset:hover, #reset:focus {
+    opacity: .8;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,.5);
+}
+
+#modes button {
+    margin: 2px;
+    padding: 8px;
+    border: 0;
+    background-color: transparent;
+    border-radius: 100%;
+    opacity: .5;
+    transition: .2s;
+}
+
+#modes button:hover, #modes button:focus {
+    opacity: 1;
+    outline: 0;
+}
+
+#modes .selectedMode, #modes .selectedMode:hover {
+    background-color: #ddd;
+    opacity: 1;
+    box-shadow: 0px 2px 10px 0px;
+}
+
+#sketchpad {
+    background-color: white;
+    width: 600px;
+    height: 600px;
+    margin: 10px auto;
+}
+
+.row {
+    display: flex;
+}
+
+.square {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    opacity: 0;
+    background-color: black;
+
+}
